@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginManager", "PluginManager\PluginManager.csproj", "{459A8449-B59C-4D8B-B342-4D07DCEE4261}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginManager.Core", "PluginManager.Core\PluginManager.Core.csproj", "{14BE7D4F-21A4-4765-A9FE-ED0C93A7C73D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginManager.Loader", "PluginManager.Loader\PluginManager.Loader.csproj", "{24C2B23E-46F5-454A-9641-E2BFAD0FFF3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginManager.Loader.Mef", "PluginManager.Loader.Mef\PluginManager.Loader.Mef.csproj", "{BCA12FA7-DE65-41F5-94FA-896C058D65BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{5D8C29E6-B489-4C89-AD33-D29E052D9239}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginManager.Sources.NuGet", "PluginManager.Sources.NuGet\PluginManager.Sources.NuGet.csproj", "{5B5AB1A0-E4FC-4268-BB7D-57AA1AA477C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{459A8449-B59C-4D8B-B342-4D07DCEE4261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{459A8449-B59C-4D8B-B342-4D07DCEE4261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{459A8449-B59C-4D8B-B342-4D07DCEE4261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{459A8449-B59C-4D8B-B342-4D07DCEE4261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14BE7D4F-21A4-4765-A9FE-ED0C93A7C73D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14BE7D4F-21A4-4765-A9FE-ED0C93A7C73D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14BE7D4F-21A4-4765-A9FE-ED0C93A7C73D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14BE7D4F-21A4-4765-A9FE-ED0C93A7C73D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24C2B23E-46F5-454A-9641-E2BFAD0FFF3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C2B23E-46F5-454A-9641-E2BFAD0FFF3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C2B23E-46F5-454A-9641-E2BFAD0FFF3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C2B23E-46F5-454A-9641-E2BFAD0FFF3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCA12FA7-DE65-41F5-94FA-896C058D65BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCA12FA7-DE65-41F5-94FA-896C058D65BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCA12FA7-DE65-41F5-94FA-896C058D65BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCA12FA7-DE65-41F5-94FA-896C058D65BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B5AB1A0-E4FC-4268-BB7D-57AA1AA477C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B5AB1A0-E4FC-4268-BB7D-57AA1AA477C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B5AB1A0-E4FC-4268-BB7D-57AA1AA477C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B5AB1A0-E4FC-4268-BB7D-57AA1AA477C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
