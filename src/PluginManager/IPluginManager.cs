@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PluginManager.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -41,10 +42,10 @@ namespace PluginManager
 		void Disable(PluginKey pluginKey);
 
 		/// <summary>
-		/// Rollsback the plugin to the given installed version
+		/// Rolls back the plugin to the given installed version
 		/// </summary>
 		/// <param name="pluginKey"></param>
 		/// <param name="version"></param>
-		void Rollback(PluginKey pluginKey, string version);
+		void Rollback(PluginKey pluginKey);
 	}
 }

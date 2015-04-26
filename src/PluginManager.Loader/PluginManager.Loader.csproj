@@ -39,14 +39,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AggregatePluginLoader.cs" />
+    <Compile Include="AppDomainPluginHost.cs" />
+    <Compile Include="IPluginHost.cs" />
     <Compile Include="IPluginLoader.cs" />
     <Compile Include="PluginLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PluginManager.Core\PluginManager.Core.csproj">
+    <ProjectReference Include="..\PluginManager.Client\PluginManager.Client.csproj">
       <Project>{14be7d4f-21a4-4765-a9fe-ed0c93a7c73d}</Project>
+      <Name>PluginManager.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PluginManager.Core\PluginManager.Core.csproj">
+      <Project>{94f90c31-0563-41fc-83fb-82e7c676735c}</Project>
       <Name>PluginManager.Core</Name>
     </ProjectReference>
   </ItemGroup>

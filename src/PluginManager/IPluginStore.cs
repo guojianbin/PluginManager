@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PluginManager.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 namespace PluginManager
 {
 	/// <summary>
-	/// Defines a store of plugin metadata
+	/// Defines a store of plugin information
 	/// </summary>
 	public interface IPluginStore
 	{

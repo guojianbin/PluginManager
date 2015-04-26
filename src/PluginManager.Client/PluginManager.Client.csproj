@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{94F90C31-0563-41FC-83FB-82E7C676735C}</ProjectGuid>
+    <ProjectGuid>{14BE7D4F-21A4-4765-A9FE-ED0C93A7C73D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PluginManager.Core</RootNamespace>
-    <AssemblyName>PluginManager.Core</AssemblyName>
+    <RootNamespace>PluginManager.Client</RootNamespace>
+    <AssemblyName>PluginManager.Client</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,7 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PluginKey.cs" />
+    <Compile Include="IPlugin.cs" />
+    <Compile Include="IPluginInstallPart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

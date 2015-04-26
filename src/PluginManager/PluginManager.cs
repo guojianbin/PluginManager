@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PluginManager.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,7 +38,7 @@ namespace PluginManager
 			throw new NotImplementedException();
 		}
 
-		public void Rollback(PluginKey pluginKey, string version)
+		public void Rollback(PluginKey pluginKey)
 		{
 			throw new NotImplementedException();
 		}

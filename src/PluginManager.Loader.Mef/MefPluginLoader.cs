@@ -1,4 +1,5 @@
-﻿using PluginManager.Core;
+﻿using PluginManager.Client;
+using PluginManager.Core;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition.Hosting;
@@ -62,13 +63,38 @@ namespace PluginManager.Loader.Mef
 		/// Loads plugins from the MEF container
 		/// </summary>
 		/// <returns></returns>
-		public IEnumerable<IPlugin> Load()
+		public void Load(PluginKey key)
 		{
-			return container.GetExportedValues<IPlugin>();
+			IEnumerable<IPlugin> plugins = container.GetExportedValues<IPlugin>();
+
+			if (plugins != null)
+			{
+				foreach (IPlugin plugin in plugins)
+				{
+					plugin.Initialise();
+				}
+			}
+		}
+
+		/// <summary>
+		/// Unloads plugins from the MEF container
+		/// </summary>
+		/// <param name="key"></param>
+		public void Unload(PluginKey key)
+		{
+			IEnumerable<IPlugin> plugins = container.GetExportedValues<IPlugin>();
+
+			if (plugins != null)
+			{
+				foreach (IPlugin plugin in plugins)
+				{
+					plugin.TearDown();
+				}
+			}
 		}
 
 		#endregion
 
-		//////////////////////////////////////////////////////////////////////		
+		//////////////////////////////////////////////////////////////////////
 	}
 }

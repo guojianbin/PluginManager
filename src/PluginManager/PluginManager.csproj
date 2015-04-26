@@ -48,7 +48,6 @@
     <Compile Include="IPluginStore.cs" />
     <Compile Include="IPluginSource.cs" />
     <Compile Include="Plugin.cs" />
-    <Compile Include="PluginKey.cs" />
     <Compile Include="PluginManager.cs" />
     <Compile Include="PluginMetadata.cs" />
     <Compile Include="PluginMetadataSearchParameters.cs" />
@@ -60,7 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PluginManager.Core\PluginManager.Core.csproj">
-      <Project>{14be7d4f-21a4-4765-a9fe-ed0c93a7c73d}</Project>
+      <Project>{94f90c31-0563-41fc-83fb-82e7c676735c}</Project>
       <Name>PluginManager.Core</Name>
     </ProjectReference>
   </ItemGroup>

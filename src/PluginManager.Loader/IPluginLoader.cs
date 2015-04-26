@@ -1,4 +1,5 @@
-﻿using PluginManager.Core;
+﻿using PluginManager.Client;
+using PluginManager.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +14,14 @@ namespace PluginManager.Loader
 	public interface IPluginLoader
 	{
 		/// <summary>
-		/// Loads plugins
+		/// Loads a plugin with the given key
 		/// </summary>
-		IEnumerable<IPlugin> Load();
+		void Load(PluginKey key);
+
+		/// <summary>
+		/// Unloads a plugin with the given key
+		/// </summary>
+		/// <param name="key"></param>
+		void Unload(PluginKey key);
 	}
 }

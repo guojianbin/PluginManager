@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PluginManager.Core
+namespace PluginManager.Client
 {
 	/// <summary>
 	/// Defines a part that can be run as a step in a plugin install process.

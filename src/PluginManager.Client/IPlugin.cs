@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PluginManager.Core
+namespace PluginManager.Client
 {
 	/// <summary>
 	/// Represents a plugin which can be loaded into an application
@@ -15,5 +15,10 @@ namespace PluginManager.Core
 		/// Initialises the plugin
 		/// </summary>
 		void Initialise();
+
+		/// <summary>
+		/// Tears down the plugin
+		/// </summary>
+		void TearDown();
 	}
 }

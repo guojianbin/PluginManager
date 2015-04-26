@@ -1,4 +1,4 @@
-﻿using PluginManager.Core;
+﻿using PluginManager.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +11,7 @@ namespace PluginManager.Loader
 	/// Provides plugin loading
 	/// </summary>
 	/// <remarks>
-	/// An implementation of <see cref="PluginManager.Loader.IPluginLoader"/> must be set before calling <see cref="Load()"/>
+	/// An implementation of <see cref="PluginManager.Loader.IPluginHost"/> must be set before calling <see cref="Load()"/>
 	/// </remarks>
 	public class PluginLoader
 	{
@@ -20,9 +20,9 @@ namespace PluginManager.Loader
 		#region Properties
 
 		/// <summary>
-		/// Gets and sets the underlying loader
+		/// Gets and sets the host under which plugins will be loaded and executed
 		/// </summary>
-		public IPluginLoader Loader { get; set; }
+		public IPluginHost Host { get; set; }
 
 		#endregion
 
@@ -47,18 +47,12 @@ namespace PluginManager.Loader
 		/// Loads plugins
 		/// </summary>
 		public void Load()
-		{ 
-			if (Loader == null)
+		{
+			if (Host == null)
 			{
-				throw new Exception("Loader must be set before calling Load()");
+				throw new Exception("Host must be set before calling Load()");
 			}
-
-			IEnumerable<IPlugin> plugins = Loader.Load();
-
-			foreach (IPlugin plugin in plugins)
-			{
-				plugin.Initialise();
-			}
+			
 		}
 
 		#endregion

@@ -56,6 +56,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PluginManager.Core\PluginManager.Core.csproj">
+      <Project>{94f90c31-0563-41fc-83fb-82e7c676735c}</Project>
+      <Name>PluginManager.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PluginManager\PluginManager.csproj">
       <Project>{459a8449-b59c-4d8b-b342-4d07dcee4261}</Project>
       <Name>PluginManager</Name>

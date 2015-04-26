@@ -25,17 +25,12 @@ namespace PluginManager
 		/// <summary>
 		/// The plugin is installed and enabled
 		/// </summary>
-		Enabled			= 3,
+		Installed		= 3,
 
 		/// <summary>
 		/// The plugin is being updated
 		/// </summary>
-		Updating		= 4,
-
-		/// <summary>
-		/// The plugin is disabled
-		/// </summary>
-		Disabled		= -1
+		Updating		= 4
 	}
 
 	/// <summary>
@@ -81,5 +76,10 @@ namespace PluginManager
 		/// Gets and sets the state of the plugin
 		/// </summary>
 		public PluginState State { get; set; }
+
+		/// <summary>
+		/// Gets and sets whether the plugin is enabled
+		/// </summary>
+		public bool IsEnabled { get; set; }
 	}
 }
