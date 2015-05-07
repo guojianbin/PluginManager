@@ -1,4 +1,5 @@
 ﻿using PluginManager.Client;
+using PluginManager.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,9 @@ namespace PluginManager.Loader
 	/// Provides plugin loading
 	/// </summary>
 	/// <remarks>
-	/// An implementation of <see cref="PluginManager.Loader.IPluginHost"/> must be set before calling <see cref="Load()"/>
+	/// An implementation of <see cref="PluginManager.Loader.IPluginHost"/> 
+	/// and <see cref="PluginManager.Loader.IPluginStore"/> 
+	/// must be set before calling <see cref="Load()"/>
 	/// </remarks>
 	public class PluginLoader
 	{
@@ -23,6 +26,11 @@ namespace PluginManager.Loader
 		/// Gets and sets the host under which plugins will be loaded and executed
 		/// </summary>
 		public IPluginHost Host { get; set; }
+
+		/// <summary>
+		/// Gets and sets the store for plugin information
+		/// </summary>
+		public IPluginStore Store { get; set; }
 
 		#endregion
 
@@ -53,6 +61,17 @@ namespace PluginManager.Loader
 				throw new Exception("Host must be set before calling Load()");
 			}
 			
+			if (Store == null)
+			{
+				throw new Exception("Store must be set before calling Load()");
+			}
+
+			IEnumerable<PluginKey> enabledPlugins = Store.GetEnabledPlugins();
+
+			foreach (PluginKey key in enabledPlugins)
+			{
+				Host.Load(key);
+			}
 		}
 
 		#endregion

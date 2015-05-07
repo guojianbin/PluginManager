@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>PluginManager.Loader</id>
+    <version>0.1.0</version>
+    <authors>Geoff Lamrock</authors>
+    <owners>Geoff Lamrock</owners>	
+	<description>A library for loading PluginManager plugins</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+	<dependencies>
+      <dependency id="PluginManager.Core" version="0.1.0" />
+	  <dependency id="PluginManager.Client" version="0.1.0" />
+    </dependencies>	
+  </metadata>
+</package>

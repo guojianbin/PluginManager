@@ -42,6 +42,7 @@
     <Compile Include="AppDomainPluginHost.cs" />
     <Compile Include="IPluginHost.cs" />
     <Compile Include="IPluginLoader.cs" />
+    <Compile Include="IPluginStore.cs" />
     <Compile Include="PluginLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

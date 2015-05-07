@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>PluginManager.Client</id>
+    <version>0.1.0</version>
+    <authors>Geoff Lamrock</authors>
+    <owners>Geoff Lamrock</owners>
+	<description>Client classes and interfaces for the PluginManager system</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+  </metadata>
+</package>
